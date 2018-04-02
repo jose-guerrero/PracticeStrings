@@ -31,9 +31,15 @@ namespace ParseStringLibrary.MsTest
         }
 
         [TestMethod]
-        public void NullInputs(){
+        public void AreNullInputs(){
             var string1 = new ParseStrings("no{X}and{Y}and{X}we",null,null);
             Assert.IsTrue(false==string1.arrays_valid);
+        }
+
+        [TestMethod]
+        public void IsValidString(){
+            var string1 = new ParseStrings("no{X}and{Y}and{X}we",null,null);
+            Assert.IsTrue(true==string1.string_valid);
         }
         
         [TestMethod]

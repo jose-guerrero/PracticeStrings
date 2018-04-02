@@ -6,13 +6,13 @@ namespace ParseStringLibrary
     public class ParseStrings
     {
         public string res;
-        public bool string_valid;
-        public bool arrays_valid;
+        public bool string_valid;  /// is the string valid?
+        public bool arrays_valid;  /// are the inputs array valid?
         public ParseStrings(string s,string[] X,string[] Y)
         {
             try
             {     
-                if (X.Length != Y.Length || X==null || Y==null)
+                if (X.Length != Y.Length)
                 {
                     throw new DifferentLengthException();  /// Custom exception
                 }
@@ -44,7 +44,17 @@ namespace ParseStringLibrary
                 arrays_valid = false;
                 res = "";
             }
-            catch
+            catch(NullReferenceException)
+            {
+                res = "";
+                if (s==null)   string_valid = false;
+                else string_valid = true;
+                
+                if (X==null || Y==null)  arrays_valid = false;
+                else arrays_valid = true;
+
+            }   
+            catch(KeyNotFoundException)
             {
                 string_valid = false;
                 res = "";
