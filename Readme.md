@@ -2,4 +2,4 @@
 
 The following project contains a component to parse strings. This project has been developed in Microsoft Visual Studio Code.
 
-The main program can be found in <strong>"ParseStringLibrary/ParseStrings.cs"</strong>, meanwhile the testing  unit can be found in the file <strong>"ParseStringLibrary.MsTest/TestinPgarsing.cs</strong>
+The main program can be found in <strong>"ParseStringLibrary/ParseStrings.cs"</strong>, meanwhile the test cases can be found in the file <strong>"ParseStringLibrary.MsTest/TestinPgarsing.cs"</strong>
