@@ -23,7 +23,7 @@ namespace ParseStringLibrary.MsTest
         }
 
         [TestMethod]
-        public void OddNumberBrackets(){
+        public void OddNumberBrackets1(){
             string[] s1 = {"X","Y","Z"};
             string[] s2 = {"1","2","3"};
             var string1 = new ParseStrings("no{X}and{Yand{X}we",s1,s2);
@@ -43,11 +43,27 @@ namespace ParseStringLibrary.MsTest
         }
         
         [TestMethod]
-        public void CustomException(){
+        public void ArraysDifferentLength(){
             string[] s1 = {"X","Y","Z","A"};
             string[] s2 = {"1","2"};
             var string1 = new ParseStrings("no{X}and{Y}awe",s1,s2);
             Assert.IsTrue(false==string1.arrays_valid);
+        }
+
+         [TestMethod]
+        public void NoClosedBracket(){
+            string[] s1 = {"X","Y","Z"};
+            string[] s2 = {"1","2","3"};
+            var string1 = new ParseStrings("no{XandYandXwe",s1,s2);
+            Assert.IsTrue(false==string1.string_valid);
+        }
+
+        [TestMethod]
+        public void NoOpenBracket(){
+            string[] s1 = {"X","Y","Z"};
+            string[] s2 = {"1","2","3"};
+            var string1 = new ParseStrings("noX}and{Yand{X}we",s1,s2);
+            Assert.IsTrue(false==string1.string_valid);
         }
     }
 }

@@ -17,6 +17,11 @@ namespace ParseStringLibrary
                     throw new DifferentLengthException();  /// Custom exception
                 }
 
+                if (s.IndexOf('{')==-1 && s.IndexOf('}')!=-1)
+                {
+                    throw new OddNumberBracketsException();
+                }
+
                 Dictionary<string, string> dictionary = new Dictionary<string, string>(); 
                 for (int i = 0; i < X.Length; i++)
                 {
@@ -30,6 +35,9 @@ namespace ParseStringLibrary
                     if (n==-1) break;         /// If it is not found then theres no more strings to change
                     int m = s.IndexOf('}');
 
+                    if (n>m) {
+                        throw new OddNumberBracketsException();
+                    } 
                     string s1 = s.Substring(0,n);   
                     res = res + s1 + dictionary[s.Substring(n+1,m-n-1)];
                     s = s.Substring(m+1,s.Length-m-1);  /// Cutting to analyse the rest of the string
@@ -39,7 +47,13 @@ namespace ParseStringLibrary
                 string_valid = true;
                 res += s;
             }
+            
             catch(DifferentLengthException) /// The Length of two arrays are different
+            {
+                arrays_valid = false;
+                res = "";
+            }
+            catch(OddNumberBracketsException)
             {
                 arrays_valid = false;
                 res = "";
@@ -66,6 +80,13 @@ namespace ParseStringLibrary
     public class DifferentLengthException : Exception
     {
         public DifferentLengthException()
+        {         
+        }
+    }
+    [Serializable]
+    public class OddNumberBracketsException : Exception
+    {
+        public OddNumberBracketsException()
         {         
         }
     }
