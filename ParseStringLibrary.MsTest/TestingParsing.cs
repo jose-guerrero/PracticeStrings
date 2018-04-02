@@ -27,13 +27,13 @@ namespace ParseStringLibrary.MsTest
             string[] s1 = {"X","Y","Z"};
             string[] s2 = {"1","2","3"};
             var string1 = new ParseStrings("no{X}and{Yand{X}we",s1,s2);
-            Assert.IsTrue(false==string1.valid);
+            Assert.IsTrue(false==string1.string_valid);
         }
 
         [TestMethod]
         public void NullInputs(){
             var string1 = new ParseStrings("no{X}and{Y}and{X}we",null,null);
-            Assert.IsTrue(false==string1.valid);
+            Assert.IsTrue(false==string1.arrays_valid);
         }
         
         [TestMethod]
@@ -41,7 +41,7 @@ namespace ParseStringLibrary.MsTest
             string[] s1 = {"X","Y","Z","A"};
             string[] s2 = {"1","2"};
             var string1 = new ParseStrings("no{X}and{Y}awe",s1,s2);
-            Assert.IsTrue(false==string1.valid);
+            Assert.IsTrue(false==string1.arrays_valid);
         }
     }
 }

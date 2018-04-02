@@ -6,12 +6,13 @@ namespace ParseStringLibrary
     public class ParseStrings
     {
         public string res;
-        public bool valid;
+        public bool string_valid;
+        public bool arrays_valid;
         public ParseStrings(string s,string[] X,string[] Y)
         {
             try
             {     
-                if (X.Length != Y.Length)
+                if (X.Length != Y.Length || X==null || Y==null)
                 {
                     throw new DifferentLengthException();  /// Custom exception
                 }
@@ -33,12 +34,19 @@ namespace ParseStringLibrary
                     res = res + s1 + dictionary[s.Substring(n+1,m-n-1)];
                     s = s.Substring(m+1,s.Length-m-1);  /// Cutting to analyse the rest of the string
                 }
-                valid = true;
+
+                arrays_valid = true;
+                string_valid = true;
                 res += s;
+            }
+            catch(DifferentLengthException)
+            {
+                arrays_valid = false;
+                res = "";
             }
             catch
             {
-                valid = false;
+                string_valid = false;
                 res = "";
             }          
         }       
