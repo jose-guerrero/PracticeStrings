@@ -1,0 +1,15 @@
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.deps.json
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.runtimeconfig.json
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.runtimeconfig.dev.json
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.dll
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.pdb
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/ParseStringLibrary.dll
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/bin/Debug/netcoreapp2.0/ParseStringLibrary.pdb
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/obj/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.csproj.CoreCompileInputs.cache
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/obj/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.AssemblyInfoInputs.cache
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/obj/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.AssemblyInfo.cs
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/obj/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.dll
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary.MsTest/obj/Debug/netcoreapp2.0/ParseStringLibrary.MsTest.pdb

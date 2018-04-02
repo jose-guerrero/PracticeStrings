@@ -1,0 +1,8 @@
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary/bin/Debug/netstandard2.0/ParseStringLibrary.deps.json
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary/bin/Debug/netstandard2.0/ParseStringLibrary.dll
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary/bin/Debug/netstandard2.0/ParseStringLibrary.pdb
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary/obj/Debug/netstandard2.0/ParseStringLibrary.csproj.CoreCompileInputs.cache
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary/obj/Debug/netstandard2.0/ParseStringLibrary.AssemblyInfoInputs.cache
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary/obj/Debug/netstandard2.0/ParseStringLibrary.AssemblyInfo.cs
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary/obj/Debug/netstandard2.0/ParseStringLibrary.dll
+/Users/joseguerrero/Projects/urlparsingv2/ParseStringLibrary/obj/Debug/netstandard2.0/ParseStringLibrary.pdb
