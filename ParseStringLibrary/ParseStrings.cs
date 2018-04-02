@@ -55,7 +55,7 @@ namespace ParseStringLibrary
             }
             catch(OddNumberBracketsException)
             {
-                arrays_valid = false;
+                string_valid = false;
                 res = "";
             }
             catch(NullReferenceException)  ///  Null Input
