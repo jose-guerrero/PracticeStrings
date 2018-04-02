@@ -32,7 +32,7 @@ namespace ParseStringLibrary.MsTest
 
         [TestMethod]
         public void NullInputs(){
-            var string1 = new ParseStrings("no{X}and{Yand{X}we",null,null);
+            var string1 = new ParseStrings("no{X}and{Y}and{X}we",null,null);
             Assert.IsTrue(false==string1.valid);
         }
         
