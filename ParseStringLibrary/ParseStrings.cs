@@ -39,12 +39,12 @@ namespace ParseStringLibrary
                 string_valid = true;
                 res += s;
             }
-            catch(DifferentLengthException)
+            catch(DifferentLengthException) /// The Length of two arrays are different
             {
                 arrays_valid = false;
                 res = "";
             }
-            catch(NullReferenceException)
+            catch(NullReferenceException)  ///  Null Input
             {
                 res = "";
                 if (s==null)   string_valid = false;
@@ -54,7 +54,7 @@ namespace ParseStringLibrary
                 else arrays_valid = true;
 
             }   
-            catch(KeyNotFoundException)
+            catch(KeyNotFoundException)  /// No Key found in Dictionary
             {
                 string_valid = false;
                 res = "";
