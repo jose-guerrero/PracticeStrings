@@ -10,8 +10,7 @@ namespace ParseStringLibrary
         public ParseStrings(string s,string[] X,string[] Y)
         {
             try
-            {
-                 
+            {     
                 if (X.Length != Y.Length)
                 {
                     throw new DifferentLengthException();  /// Custom exception
@@ -34,14 +33,14 @@ namespace ParseStringLibrary
                     res = res + s1 + dictionary[s.Substring(n+1,m-n-1)];
                     s = s.Substring(m+1,s.Length-m-1);  /// Cutting to analyse the rest of the string
                 }
+                valid = true;
                 res += s;
             }
             catch
             {
                 valid = false;
                 res = "";
-            }
-            
+            }          
         }       
     }
 
