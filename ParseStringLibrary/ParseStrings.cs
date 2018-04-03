@@ -43,6 +43,11 @@ namespace ParseStringLibrary
                     s = s.Substring(m+1,s.Length-m-1);  /// Cutting to analyse the rest of the string
                 }
 
+                if (s.IndexOf('}')!=-1) 
+                {
+                    throw new OddNumberBracketsException();
+                }
+
                 arrays_valid = true;
                 string_valid = true;
                 res += s;

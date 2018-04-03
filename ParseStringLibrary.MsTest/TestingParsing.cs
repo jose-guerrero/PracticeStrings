@@ -65,5 +65,22 @@ namespace ParseStringLibrary.MsTest
             var string1 = new ParseStrings("noX}and{Yand{X}we",s1,s2);
             Assert.IsTrue(false==string1.string_valid);
         }
+
+        [TestMethod]
+        public void ManyClosedBrackets(){
+            string[] s1 = {"X","Y","Z"};
+            string[] s2 = {"1","2","3"};
+            var string1 = new ParseStrings("noX}and{Y}}}}}}}and{X}we",s1,s2);
+            Assert.IsTrue(false==string1.string_valid);
+        }
+
+        
+        [TestMethod]
+        public void MoreClosedBrackets(){
+            string[] s1 = {"X","Y","Z"};
+            string[] s2 = {"1","2","3"};
+            var string1 = new ParseStrings("noX}and{Y}and{X}w}ee}",s1,s2);
+            Assert.IsTrue(false==string1.string_valid);
+        }
     }
 }
