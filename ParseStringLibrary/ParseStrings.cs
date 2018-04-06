@@ -17,11 +17,6 @@ namespace ParseStringLibrary
                     throw new DifferentLengthException();  /// Custom exception
                 }
 
-                if (s.IndexOf('{')==-1 && s.IndexOf('}')!=-1)
-                {
-                    throw new OddNumberBracketsException();
-                }
-
                 Dictionary<string, string> dictionary = new Dictionary<string, string>(); 
                 for (int i = 0; i < X.Length; i++)
                 {
